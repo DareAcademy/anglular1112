@@ -1,0 +1,32 @@
+<div>
+<input type="button" value="Save" (click)="print()">
+</div>
+<div>
+    <input type="button" value="dblClick" (dblclick)="print1()">
+</div>
+<div>
+    <select (change)="print3()">
+        <option>Jordan</option>
+        <option>USA</option>
+    </select>
+</div>
+<div>
+    <input type="text" (focus)="print4()" (blur)="print5()">
+</div>
+
+<div style="width: 100px;height: 100px; background-color: blue;" (mouseover)="print6()" (mouseout)="print7()">
+
+</div>
+
+<hr/>
+
+<span>The name is {{name}}</span>
+
+<div>
+    <input type="button" [value]="btnValue" [disabled]="IsDisabled">
+</div>
+
+<hr/>
+<input type="text" [(ngModel)]="name1" >
+{{name1}}
+<input type="button" value="Save" (click)="onSave()">

@@ -1,0 +1,54 @@
+<div *ngIf="isDisplay">
+    Hello World!
+</div>
+
+<div>
+    <input type="button" value="toggle" (click)="onToggle()">
+</div>
+<div>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr *ngFor="let x of values">
+            <td>
+                {{x}}
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<hr/>
+<div>
+<table border="1">
+<thead>
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Name
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let item of liEmployee">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+    </tr>
+</tbody>
+
+</table>
+</div>
+
+<div style="margin-bottom: 10px; width:100px ;height: 100px;" [ngClass]="addClass()">
+
+</div>
+
+<div style="width:100px ;height: 100px;" [ngStyle]="addStyle()">
+
+</div>
