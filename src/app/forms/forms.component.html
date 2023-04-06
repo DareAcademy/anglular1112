@@ -1,0 +1,23 @@
+<form [formGroup]="form" >
+
+    <div>
+        <span>Name</span>
+        <input type="text" formControlName="txtName" >
+        <span *ngIf="form.controls['txtName'].touched && form.hasError('required','txtName')" >The name is required</span>
+    </div>
+
+    <div>
+        <span>Salary</span>
+        <input type="text" formControlName="txtSalary">
+    </div>
+
+    <div>
+        <span>Email</span>
+        <input type="text" formControlName="txtEmail">
+    </div>
+
+    <div>
+        <input type="button" value="Save" (click)="onSave()">
+    </div>
+
+</form>

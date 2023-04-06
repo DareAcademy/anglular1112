@@ -1,14 +1,16 @@
-<h1>
-  App Component
-</h1>
 
-<hr/>
-
-<app-new-employee></app-new-employee>
-
-<hr/>
-
-<app-data-binding></app-data-binding>
-
-<hr/>
-<app-directive></app-directive>
+<div style="display:flex ;min-height: 500px;">
+<div style="border:1px solid ;width:200px;">
+<ul>
+  <li><a routerLink="/">Login</a></li>
+  <li><a routerLink="/emp" >New Employee</a></li>
+  <li><a routerLink="/binding">Binding</a></li>
+  <li><a routerLink="/directive">Directive</a></li>
+  <li><a routerLink="/customer">Customer</a></li>
+  <li><a routerLink="/frm">Forms</a></li>
+</ul>
+</div>
+<div style="border:1px solid ;width:600px">
+<router-outlet></router-outlet>
+</div>
+</div>

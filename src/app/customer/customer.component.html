@@ -1,0 +1,9 @@
+<div style="display: flex;">
+<div>
+    <app-new-customer (customerInfo)="obj=$event"></app-new-customer>
+</div>
+
+<div>
+    <app-customer-list [obj]="obj"></app-customer-list>
+</div>
+</div>
